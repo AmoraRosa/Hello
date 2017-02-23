@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+</head>
+<body>
+<script>
+var primeiroNumero = "0";
+var segundoNumero = "0";
+var n1;
+var n2;
+var operacao;
+var resultado = 0;
+primeiroNumero = prompt("entre com o primeiro numero");
+while (operacao != "fim") {
+	operacao = prompt("Entre com uma letra para definir a operação matemática: (a)dição, (s)ubtração, (m)ultiplicação, (d)ivisão ou (fim) para encerrar");
+	if (operacao != "fim") {
+	segundoNumero = prompt("entre com o proximo numero");
+	n1 = Number(primeiroNumero);
+	n2 = Number(segundoNumero);
+	if (operacao == "a") {
+		resultado = n1 + n2;
+		alert("O resultado até o momento é:" + resultado);
+		primeiroNumero = resultado;
+	}
+	if (operacao == "s") {
+		resultado = n1 - n2;
+		alert("O resultado até o momento é:" + resultado);
+		primeiroNumero = resultado;
+	}
+	if (operacao == "m") {
+		resultado = n1 * n2;
+		alert("O resultado até o momento é:" + resultado);
+		primeiroNumero = resultado;
+	}
+	if (operacao == "d") {
+		resultado = n1 / n2;
+		alert("O resultado até o momento é:" + resultado);
+		primeiroNumero = resultado;
+	}
+}
+}
+
+</script>
+</body>
+</html>
